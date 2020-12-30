@@ -9,8 +9,11 @@ Genetic algorithms simulate the process of natural selection which means those s
 Genetic algorithms are based on an analogy with genetic structure and behavior of chromosome of the population. Following is the foundation of GAs based on this analogy –
 
 1 - Individual in population compete for resources and mate
+
 2 - Those individuals who are successful (fittest) then mate to create more offspring than others
+
 3 - Genes from “fittest” parent propagate throughout the generation, that is sometimes parents create offspring which is better than either parent.
+
 4 - Thus each successive generation is more suited for their environment.
 
 ## Search space
@@ -32,6 +35,7 @@ Each new generation has on average more “better genes” than the individual (
 Once the initial generation is created, the algorithm evolve the generation using following operators:
 
 1 - Selection Operator: The idea is to give preference to the individuals with good fitness scores and allow them to pass there genes to the successive generations.
+
 2 - Crossover Operator: This represents mating between individuals. Two individuals are selected using selection operator and crossover sites are chosen randomly. Then the genes at these crossover sites are exchanged thus creating a completely new individual (offspring). For example:
 
 <img src = "Data/Genetic_Algorithm_02.jpg" width = "720">
@@ -42,8 +46,10 @@ Once the initial generation is created, the algorithm evolve the generation usin
 
 ### The whole algorithm can be summarized as:
 
-1 - Randomly initialize populations p
+1 - Randomly initialize populations P
+
 2 - Determine fitness of population
+
 3 - Untill convergence repeat:
 
       a) Select parents from population
