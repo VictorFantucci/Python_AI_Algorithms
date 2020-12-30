@@ -17,7 +17,7 @@ Genetic algorithms are based on an analogy with genetic structure and behavior o
 
 The population of individuals are maintained within search space. Each individual represent a solution in search space for given problem. Each individual is coded as a finite length vector (analogous to chromosome) of components. These variable components are analogous to Genes. Thus a chromosome (individual) is composed of several genes (variable components).
 
-<img src = "Data/Genetic_Algorithm_01.png" width = "720">
+<img src = "Data/Genetic_Algorithm_01.jpg" width = "720">
 
 ## Fitness Score
 
@@ -34,18 +34,21 @@ Once the initial generation is created, the algorithm evolve the generation usin
 1 - Selection Operator: The idea is to give preference to the individuals with good fitness scores and allow them to pass there genes to the successive generations.
 2 - Crossover Operator: This represents mating between individuals. Two individuals are selected using selection operator and crossover sites are chosen randomly. Then the genes at these crossover sites are exchanged thus creating a completely new individual (offspring). For example:
 
-<img src = "Data/Genetic_Algorithm_02.png" width = "720">
+<img src = "Data/Genetic_Algorithm_02.jpg" width = "720">
 
 3 - Mutation Operator: The key idea is to insert random genes in offspring to maintain the diversity in population to avoid the premature convergence. For example:
 
-<img src = "Data/Genetic_Algorithm_03.png" width = "720">
+<img src = "Data/Genetic_Algorithm_03.jpg" width = "720">
 
 ### The whole algorithm can be summarized as:
 
-1) Randomly initialize populations p
-2) Determine fitness of population
-3) Untill convergence repeat:
+1 - Randomly initialize populations p
+2 - Determine fitness of population
+3 - Untill convergence repeat:
+
       a) Select parents from population
       b) Crossover and generate new population
       c) Perform mutation on new population
       d) Calculate fitness for new population
+      
+Acknowledgements to [Atul Kumar](https://www.linkedin.com/in/atul-kumar-733b32136/) and his article at [GeeksForGeeks](https://www.geeksforgeeks.org/genetic-algorithms/)
