@@ -6,7 +6,7 @@ Genetic algorithms simulate the process of natural selection which means those s
 
 ## Foundation of Genetic Algorithms
 
-Genetic algorithms are based on an analogy with genetic structure and behavior of chromosome of the population. Following is the foundation of GAs based on this analogy –
+Genetic algorithms are based on an analogy with genetic structure and behavior of chromosome of the population. Following is the foundation of GAs based on this analogy:
 
 1 - Individual in population compete for resources and mate
 
